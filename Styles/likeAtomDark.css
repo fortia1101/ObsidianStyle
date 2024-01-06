@@ -1,12 +1,17 @@
 /* Background */
 .workspace-tab-header-container,
-body.is-focused .sidebar-toggle-button,
-body.is-focused .workspace-tabs.mod-top,
+.sidebar-toggle-button,
+.workspace-tabs.mod-top,
 .mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right,
-.workspace-tabs .workspace-leaf,
+.workspace-tabs .workspace-leaf {
+    background-color: #22252a;
+}
+.titlebar,
+.workspace-ribbon.mod-left,
 body.is-focused .titlebar,
 body.is-focused .workspace-ribbon.mod-left {
     background-color: #22252a;
+    --titlebar-background: #22252a;
 }
 
 .is-focused .workspace-leaf.mod-active .view-header,
@@ -14,7 +19,6 @@ body.is-focused .workspace-ribbon.mod-left {
 .workspace-tab-header.is-active.mod-active,
 .workspace-tab-header.is-active.mod-active,
 .workspace-tabs.mod-top.mod-top-left-space > .workspace-leaf-content,
-body.is-phone .view-header,
 .show-view-header .view-header,
 .workspace .mod-root .workspace-tab-header {
     background-color: #292c33;
@@ -28,11 +32,11 @@ body.is-phone .view-header,
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
     box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) #292c33;
 }
-
+/* 
 body.is-focused .titlebar,
 body.is-focused .workspace-ribbon.mod-left {
     --titlebar-background: #22252a;
-}
+} */
 
 /* Text Decolation */
 .inline-title::before {
