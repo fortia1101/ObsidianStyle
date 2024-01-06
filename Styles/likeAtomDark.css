@@ -1,0 +1,61 @@
+/* Background */
+.workspace-tab-header-container,
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top,
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right,
+.workspace-tabs .workspace-leaf,
+body.is-focused .titlebar,
+body.is-focused .workspace-ribbon.mod-left {
+    background-color: #22252a;
+}
+
+.is-focused .workspace-leaf.mod-active .view-header,
+.workspace-tabs .workspace-leaf .view-content,
+.workspace-tab-header.is-active.mod-active,
+.workspace-tab-header.is-active.mod-active,
+.workspace-tabs.mod-top.mod-top-left-space > .workspace-leaf-content,
+body.is-phone .view-header,
+.show-view-header .view-header,
+.workspace .mod-root .workspace-tab-header {
+    background-color: #292c33;
+}
+
+.view-header-title-container.mod-at-start.mod-fade::after {
+    background: none;
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before,
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+    box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) #292c33;
+}
+
+/* Text Decolation */
+.inline-title::before {
+    content: "Title: ";
+}
+
+.cm-strong,
+b,
+strong {
+    font-weight: bold;
+    color: rgb(240, 195, 125);
+}
+
+.cm-header-1,
+.markdown-rendered h1,
+.cm-header-2,
+.markdown-rendered h2 {
+    border-bottom: solid 1px gray;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget th,
+.markdown-source-view.mod-cm6 .cm-table-widget td,
+.markdown-rendered thead tr > th,
+.markdown-rendered tbody tr > td {
+    border-color: var(--text-normal);
+}
+
+/* Caret */
+.ͼ2 .cm-content {
+    caret-color: white;
+}

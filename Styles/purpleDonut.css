@@ -1,0 +1,76 @@
+/* Background Color */
+.theme-dark {
+    --sdf-published-note-bg-color-from: var(--background-primary);
+    --sdf-published-note-bg-color-to: rgb(67, 53, 111);
+}
+.theme-light {
+    --sdf-published-note-bg-color-from: var(--background-primary);
+    --sdf-published-note-bg-color-to: rgb(200, 184, 255);
+}
+
+.view-content,
+.markdown-preview-view main {
+    background: linear-gradient(var(--sdf-published-note-bg-color-from), var(--sdf-published-note-bg-color-to));
+}
+
+/* Text Decoration */
+.theme-dark {
+    .inline-title {
+        display: inline-block;
+        font-size: 2em;
+    }
+
+    .inline-title::before {
+        content: "Title: ";
+    }
+
+    .HyperMD-header-1 {
+        display: inline-block;
+        font-size: 1.8em;
+    }
+
+    .markdown-preview-view h1 {
+        display: block;
+        font-size: 1.8em;
+        border-bottom: solid 1px gray;
+    }
+
+    .markdown-preview-view h1::before {
+        content: "🍩 ";
+    }
+
+    .HyperMD-header-2,
+    .markdown-preview-view h2 {
+        font-size: 1.5em;
+    }
+
+    .markdown-preview-view h2::before {
+        content: "📌 ";
+    }
+
+    .HyperMD-header-3,
+    .markdown-preview-view h3 {
+        font-size: 1.2em;
+    }
+
+    .markdown-preview-view h3::before {
+        content: "● ";
+    }
+
+    .HyperMD-list-line,
+    .markdown-preview-view li {
+        line-height: 2em;
+    }
+
+    .cm-strong,
+    .markdown-preview-view strong {
+        font-size: 1em;
+        font-weight: bold;
+        color: rgb(240, 195, 125);
+    }
+
+    .cm-underline,
+    .markdown-preview-view a {
+        color: rgb(85, 188, 219);
+    }
+}
