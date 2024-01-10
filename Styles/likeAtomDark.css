@@ -1,27 +1,25 @@
 /* Background */
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right,
 .workspace-tab-header-container,
 .sidebar-toggle-button,
 .workspace-tabs.mod-top,
 .mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right,
-.workspace-tabs .workspace-leaf {
-    background-color: #22252a;
-}
-
+.workspace-tabs .workspace-leaf,
 .titlebar,
 .workspace-ribbon.mod-left,
+.workspace-ribbon.mod-left:before,
 body.is-focused .titlebar,
 body.is-focused .workspace-ribbon.mod-left {
     background-color: #22252a;
-    --titlebar-background: #22252a;
 }
 
 .is-focused .workspace-leaf.mod-active .view-header,
-.workspace-tabs .workspace-leaf .view-content,
 .workspace-tab-header.is-active.mod-active,
 .workspace-tab-header.is-active.mod-active,
 .workspace-tabs.mod-top.mod-top-left-space > .workspace-leaf-content,
 .show-view-header .view-header,
-.workspace .mod-root .workspace-tab-header {
+.workspace .mod-root .workspace-tab-header,
+.workspace-tabs .workspace-leaf .view-content {
     background-color: #292c33;
 }
 
@@ -58,6 +56,20 @@ strong {
 .markdown-rendered thead tr > th,
 .markdown-rendered tbody tr > td {
     border-color: var(--text-normal);
+}
+
+.theme-dark {
+    --text-accent: hsl(219, 79%, 66%);
+    --color-accent: hsl(219, 79%, 66%);
+    --interactive-normal: #1b1d22;
+    --interactive-accent: #4d78cc;
+    --titlebar-background: #22252a;
+    --titlebar-background-focused: #292c33;
+    --background-modifier-form-field: #1b1d22;
+    --canvas-background: #292c33;
+    --embed-bacground: #1b1d22;
+    --background-primary: #1b1d22;
+    --background-secondary: #1b1d22;
 }
 
 /* Caret */
