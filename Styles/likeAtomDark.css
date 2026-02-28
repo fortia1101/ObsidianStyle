@@ -19,7 +19,8 @@ body.is-focused .workspace-ribbon.mod-left {
 .workspace-tabs.mod-top.mod-top-left-space > .workspace-leaf-content,
 .show-view-header .view-header,
 .workspace .mod-root .workspace-tab-header,
-.workspace-tabs .workspace-leaf .view-content {
+.workspace-tabs .workspace-leaf .view-content,
+.markdown-source-view.mod-cm6 .document-search-container {
     background-color: #292c33;
 }
 
