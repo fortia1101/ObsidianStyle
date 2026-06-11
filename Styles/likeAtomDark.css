@@ -49,7 +49,8 @@ strong {
     border-bottom: solid 1px gray;
 }
 
-.cm-strikethrough {
+.cm-strikethrough,
+del {
     color: #5d5d5d !important;
 }
 
