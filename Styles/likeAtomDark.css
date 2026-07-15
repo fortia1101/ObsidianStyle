@@ -75,7 +75,8 @@ del {
     --background-secondary: #1b1d22;
 }
 
-.hr > hr {
+.hr > hr,
+.el-hr > hr {
     background: linear-gradient(90deg, transparent, rgba(138, 92, 245, 100), transparent);
     border: none;
     height: 1px;
