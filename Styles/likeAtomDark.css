@@ -75,6 +75,12 @@ del {
     --background-secondary: #1b1d22;
 }
 
+.hr > hr {
+    background: linear-gradient(90deg, transparent, rgba(138, 92, 245, 100), transparent);
+    border: none;
+    height: 1px;
+}
+
 /* Caret */
 .ͼ2 .cm-content {
     caret-color: white;
